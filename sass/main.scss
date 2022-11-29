@@ -4,6 +4,8 @@
 
 @import "./utils/variables";
 @import "./utils/v-hidden";
+@import "./utils/breakpoints";
+@import "./utils/animation";
 
 
 @import "./components/hero";
@@ -19,6 +21,6 @@
 @import "./components/footer";
 @import "./components/portfolio";
 @import "./components/background-modal";
-@import "./utils/animation";
-
+@import "./components/mobile-menu";
+@import "./components/menu";
 

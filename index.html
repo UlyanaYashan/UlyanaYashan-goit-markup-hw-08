@@ -21,6 +21,17 @@
     <div class="conteiner">
       <div class="header__flex">
       <a href="./index.html" class="logo"><span class="logo__icon">Web</span>Studio</a>
+      <button
+      class="menu-toggle js-open-menu"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+    >
+      <svg
+        width="24"
+        height="24">
+        <use href="./images/icons.svg#icon-menu_24px"></use>
+      </svg>
+    </button>
       <nav>
         <ul class="site-nav">
           <li class="site-nav__item"><a class="site-nav__link site-nav__link--current" href="./index.html" >Студія</a></li>
@@ -50,7 +61,7 @@
       </div>
     </div>
     </header>
-    <main>
+     <main>
       <section class="hero">
       <div class="conteiner">
         <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
@@ -59,7 +70,7 @@
         </button>
         </div>
       </section>
-      <section class="section">
+       <section class="section">
         <div class="conteiner">
         <h2 class="visually-hidden">Наші перваги</h2>
         <ul class="benefits">
@@ -112,7 +123,7 @@
           </li>
         </ul>
       </div>
-      </section>
+      </section> 
       <section class="section section__box">
       <div class="conteiner">
         <h2 class="list">Чим ми займаємося</h2>
@@ -120,6 +131,7 @@
           <li class="list__item">
             <div class="label">
               <img class="box-no-gap"
+              srcset="./images/_desctop-box/img_l@1x.jpg 1x, ./images/_desctop-box/img_l@2x.jpg 2x"
               src="./images/box1.jpg"
               alt="робочий стіл з компютером"
               width="370"
@@ -130,6 +142,7 @@
           <li class="list__item">
             <div class="label">
               <img class="box-no-gap"
+              srcset="./images/_desctop-box/_box2_l@1x.jpg 1x,./images/_desctop-box/_box2_l@2x.jpg 2x "
               src="./images/box2.jpg"
               alt="робоча зона з компютером і телефоном"
               width="370"
@@ -140,6 +153,7 @@
           <li class="list__item">
             <div class="label">
               <img class="box-no-gap"
+              srcset="./images/_desctop-box/_box3_l@1x.jpg 1x, ./images/_desctop-box/_box3_l@2x.jpg 2x"
               src="./images/box3.jpg"
               alt="робоча зона з компютером і планшетом"
               width="370"
@@ -150,15 +164,24 @@
         </ul>
       </div>
       </section>
-      <section class="section workers">
+     <section class="section workers">
       <div class="conteiner">
         <h2 class="list">Наша команда</h2>
         <ul class="workers__section">
           <li class="workers__item">
             <img class="worker-no-gap"
-              src="./images/photo1.jpg"
+            srcset="
+            ./images/_workers/imgimg_1_270.jpg 270w,
+            ./images/_workers/imgimg_1_354.jpg 354w,
+            ./images/_workers/imgimg_1_450.jpg 450w,
+            ./images/_workers/imgimg_1_540.jpg 540w,
+            ./images/_workers/imgimg_1_708.jpg 708w,
+            ./images/_workers/imgimg_1_900.jpg 900w
+            "
+            sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+              src="./images/_workers/imgimg_1_450.jpg"
               alt="фото усміхненого чоловіка в окулярах"
-              width="270"
+              width="450"
             />
             <div class="worker">
               <h3 class="worker__name">Ігор Дем'яненко</h3>
@@ -198,9 +221,18 @@
             </li>
           <li class="workers__item">
             <img class="worker-no-gap"
-              src="./images/photo2.jpg"
+            srcset="
+            ./images/_workers/img_2_270.jpg 270w,
+            ./images/_workers/img_2_354.jpg 354w,
+            ./images/_workers/img_2_450.jpg 450w,
+            ./images/_workers/img_2_540.jpg 540w,
+            ./images/_workers/img_2_708.jpg 708w,
+            ./images/_workers/img_2_900.jpg 900w
+            "
+            sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+              src="./images/_workers/img_2_450.jpg"
               alt="фото жінки в окулярах"
-              width="270"
+              width="450"
             />
             <div class="worker">
               <h3 class="worker__name">Ольга Рєпіна</h3>
@@ -240,9 +272,18 @@
             </li>
           <li class="workers__item">
             <img class="worker-no-gap"
-              src="./images/photo3.jpg"
+            srcset="
+            ./images/_workers/img_3_270.jpg 270w,
+            ./images/_workers/img_3_354.jpg 354w,
+            ./images/_workers/img_3_450.jpg 450w,
+            ./images/_workers/img_3_540.jpg 540w,
+            ./images/_workers/img_3_708.jpg 708w,
+            ./images/_workers/img_3_900.jpg 900w
+            "
+            sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+              src="./images/_workers/img_3_450.jpg"
               alt="фото усміхненого чоловіка"
-              width="270"
+              width="450"
             />
             <div class="worker">
               <h3 class="worker__name">Микола Тарасов</h3>
@@ -282,9 +323,18 @@
             </li>
           <li class="workers__item">
             <img class="worker-no-gap"
-              src="./images/photo4.jpg"
+            srcset="
+            ./images/_workers/img_4_270.jpg 270w,
+            ./images/_workers/img_4_354.jpg 354w,
+            ./images/_workers/img_4_450.jpg 450w,
+            ./images/_workers/img_4_540.jpg 540w,
+            ./images/_workers/img_4_708.jpg 708w,
+            ./images/_workers/img_4_900.jpg 900w
+            "
+            sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+              src="./images/_workers/img_4_450.jpg"
               alt="фото чоловіка в окулярах"
-              width="270"
+              width="450"
             />
             <div class="worker">
               <h3 class="worker__name">Михайло Єрмаков</h3>
@@ -456,7 +506,7 @@
         <p class="modal__title">Залиште свої дані, ми вам передзвонимо</p>
         <form>
           <label class="modal__label--name"><span class="modal__label--word">Ім'я</span>
-            <div class="form-field">
+            <div role="group" aria-labelledby="contact-details-head" class="form-field">
               <input class="modal__input--name" type="text" name="user_name"/>
               <svg width="18" height="18" class="modal__input--icon">
                <use href="./images/icons.svg#username"></use>
@@ -464,7 +514,7 @@
             </div>
           </label>
           <label class="modal__label--telephone"><span class="modal__label--word">Телефон</span>
-            <div class="form-field">
+            <div role="group" aria-labelledby="contact-details-head" class="form-field">
               <input class="modal__input--tel" type="tel" name="tel"/>
               <svg width="18" height="18" class="modal__input--icon">
                 <use href="./images/icons.svg#userphone"></use>
@@ -472,12 +522,12 @@
             </div>
           </label>
           <label class="modal__label--mail"><span class="modal__label--word">Пошта</span>
-            <div class="form-field">
+          <div role="group" aria-labelledby="contact-details-head" class="form-field">
               <input class="modal__input--mail" type="email" name="email">
               <svg width="18" height="18" class="modal__input--icon">
                 <use href="./images/icons.svg#usermail"></use>
               </svg>
-            </div>
+          </div>
           </label>
           <label class="modal__label--comment">
             <span class="modal__label--word">Коментар</span>
@@ -489,12 +539,57 @@
               <use class="checkbox__icon--checked" href="./images/icons.svg#icon-icon-check-2"></use>
               <use class="checkbox__icon--no-checked" href="./images/icons.svg#icon-Vector-3"></use>
             </svg>
-            <span class="checkbox__text"> Погоджуюся з розсилкою та приймаю <a href="" class="checkbox__link">Умови договору</a>
+            <span class="checkbox__text"> Погоджуюся з розсилкою та приймаю <a href="" class="checkbox__link">Умови договору</a></span>
           </label>
           <button type="submit" class="modal__btn-submit">Відправити</button>
         </form>
       </div>
     </div>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg 
+        width="18"
+        height="18">
+          <use href="./images/icons.svg#icon-close_24px"></use>
+        </svg>
+      </button>
+      <ul class="mobile-menu">
+        <li><a href="" class="link">Студія</a></li>
+        <li><a href="" class="link">Портфоліо</a></li>
+        <li><a href="" class="link">Контакти</a></li>
+      </ul>
+      <ul>
+        <li class="mobile-menu__address">
+          <a class="mobile-menu__tel" href="tel:+380961111111"
+            >+38 096 111 11 11</a>
+        </li>
+        <li class="mobile-menu__address">
+          <a class="mobile-menu__post" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a>
+        </li>
+      </ul>
+      <ul class="network-list">
+        <li class="network-list__item">
+          <a href="" class="network-list__link"> Instagram</a>
+        </li>
+        <li class="network-list__item">
+        <a href="" class="network-list__link">Twitter</a>
+      </li>
+        <li class="network-list__item"> 
+          <a href="" class="network-list__link">Facebook</a>
+        </li>
+        <li class="network-list__item"> 
+          <a href="" class="network-list__link">LinkedIn</a>
+        </li>
+      </ul>
+    </div>
     <script src="./js/modal.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>

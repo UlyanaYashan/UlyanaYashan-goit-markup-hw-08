@@ -1,23 +1,32 @@
 .logo {
-    display: block;
-    padding-bottom: 25px;
-    padding-top: 24px;
-  
-    color: #000000;
-    text-decoration: none;
-    font-family: Raleway, sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.2;
-  }
-  .logo__icon {
-    color: var(--accent-color);
-  }
+  display: block;
+  padding-bottom: 16px;
+  padding-top: 16px;
 
-  
-  .footer__logo {
-    color: var(--hero-text-color);
-    padding-top: 0px;
-    padding-bottom: 0px;
-    margin-bottom: 20px;
-  }  
+  color: #000000;
+  text-decoration: none;
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+
+  @media screen and (min-width: 767px) {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+}
+.logo__icon {
+  color: var(--accent-color);
+}
+
+
+.footer__logo {
+  color: var(--hero-text-color);
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-bottom: 28px;
+
+  @media screen and (max-width: 1199px)  {
+  text-align: center;
+  }
+}  
