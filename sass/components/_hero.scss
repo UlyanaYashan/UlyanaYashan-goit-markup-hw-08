@@ -3,14 +3,8 @@
   margin-right: auto;
   padding-top: 118px;
   padding-bottom: 118px;
-  max-width: 480px;
+  max-width: 1600px;
   height: 400px;
-
-  background-color: #000000;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  text-align: center;
 
   background-image: linear-gradient(
       to right,
@@ -18,6 +12,13 @@
       rgba(47, 48, 58, 0.4)
     ),
     url(../images/hero/hero-img_s@1x.jpg);
+    
+  background-color: #000000;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+
 
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -45,12 +46,10 @@
   }
 
   @media screen and (min-width: 768px) {
-    max-width: 768px;
     height: 400px;
   }
 
   @media screen and (min-width: 1200px) {
-    max-width: 1600px;
     height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;

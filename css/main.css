@@ -206,15 +206,15 @@ client__logo {
   margin-right: auto;
   padding-top: 118px;
   padding-bottom: 118px;
-  max-width: 480px;
+  max-width: 1600px;
   height: 400px;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/hero-img_s@1x.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-img_s@1x.jpg);
   background-color: #000000;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   text-align: center;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/hero-img_s@1x.jpg);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-img_s@1x.jpg);
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
@@ -243,13 +243,11 @@ client__logo {
 }
 @media screen and (min-width: 768px) {
   .hero {
-    max-width: 768px;
     height: 400px;
   }
 }
 @media screen and (min-width: 1200px) {
   .hero {
-    max-width: 1600px;
     height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
@@ -442,7 +440,7 @@ client__logo {
             justify-content: center;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199.99px) {
   .contacts .contacts__item {
     margin-bottom: 10px;
   }
@@ -537,7 +535,7 @@ client__logo {
   padding-bottom: 0px;
   margin-bottom: 28px;
 }
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1199.99px) {
   .footer__logo {
     text-align: center;
   }
@@ -559,7 +557,7 @@ client__logo {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.99px) {
   .benefits__item {
     margin-bottom: 30px;
   }
@@ -609,7 +607,7 @@ client__logo {
 .section__box {
   padding-top: 0px;
 }
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1199.99px) {
   .section__box {
     display: none;
   }
@@ -707,7 +705,7 @@ client__logo {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.99px) {
   .workers__item {
     margin-bottom: 30px;
   }
@@ -876,7 +874,7 @@ client__logo {
   background-color: var(--secondary-background-color);
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.99px) {
   .footer-flex {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -930,7 +928,7 @@ client__logo {
 .address__item:last-child {
   margin-bottom: 0px;
 }
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1199.99px) {
   .address__item {
     text-align: center;
   }
@@ -976,7 +974,7 @@ client__logo {
   line-height: 1.14;
   font-size: 14px;
 }
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1199.99px) {
   .footer__title {
     text-align: center;
   }
@@ -994,7 +992,7 @@ client__logo {
       -ms-flex-pack: center;
           justify-content: center;
 }
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1199.99px) {
   .footer-flex__form {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1458,8 +1456,8 @@ client__logo {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   padding: 40px 48px;
   background-color: #ffffff;
   z-index: 999;
@@ -1499,6 +1497,9 @@ client__logo {
   text-decoration: none;
   padding: 10px;
 }
+.mobile-menu .link:hover, .mobile-menu .link:focus {
+  color: var(--accent-color);
+}
 
 .mobile-menu__tel {
   font-family: inherit;
@@ -1522,12 +1523,19 @@ client__logo {
   padding: 10px;
   padding-bottom: 10px;
 }
+.mobile-menu__post:hover, .mobile-menu__post:focus {
+  color: var(--accent-color);
+}
 
 .network-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 10px;
+}
+
+.network-list {
+  margin-top: 64px;
 }
 
 .network-list__item:not(:last-child) {
