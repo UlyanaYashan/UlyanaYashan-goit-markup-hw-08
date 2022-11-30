@@ -2,6 +2,10 @@
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--secondary-background-color);
+  @media  screen and (max-width: 480px) {
+    width: 480px;
+    
+  }
 }
 .footer-flex {
   @media screen and (max-width: 767.99px) {

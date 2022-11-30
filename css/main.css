@@ -206,7 +206,7 @@ client__logo {
   margin-right: auto;
   padding-top: 118px;
   padding-bottom: 118px;
-  max-width: 1600px;
+  max-width: 1400px;
   height: 400px;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/hero-img_s@1x.jpg);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-img_s@1x.jpg);
@@ -215,6 +215,11 @@ client__logo {
   background-position: center;
   background-repeat: no-repeat;
   text-align: center;
+}
+@media screen and (max-width: 480px) {
+  .hero {
+    width: 480px;
+  }
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
@@ -269,7 +274,6 @@ client__logo {
 }
 @media screen and (min-width: 1200px) {
   .hero__title {
-    width: 696px;
     font-size: 44px;
     line-height: 1.4;
   }
@@ -491,11 +495,6 @@ client__logo {
   margin-left: auto;
   margin-right: auto;
 }
-@media screen and (min-width: 480px) {
-  .conteiner {
-    width: 480px;
-  }
-}
 @media screen and (min-width: 768px) {
   .conteiner {
     width: 768px;
@@ -679,6 +678,11 @@ client__logo {
 
 .workers {
   background-color: var(--primary-background-color-2);
+}
+@media screen and (max-width: 480px) {
+  .workers {
+    width: 480px;
+  }
 }
 
 .worker-no-gap {
@@ -872,6 +876,11 @@ client__logo {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--secondary-background-color);
+}
+@media screen and (max-width: 480px) {
+  .footer {
+    width: 480px;
+  }
 }
 
 @media screen and (max-width: 767.99px) {
